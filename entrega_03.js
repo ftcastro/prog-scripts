@@ -24,7 +24,7 @@
 
 function gerarParametro(parametro){
 	
-	console.log(parametro.count);
+	console.log(parametro.count); 
 }
 
 var countObserver = gerarListener();
