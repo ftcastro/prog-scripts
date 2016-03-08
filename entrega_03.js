@@ -4,8 +4,6 @@
 	var count = 0;
 	var observers = [];
 	
-	return objeto1;
-	
 	objeto1.addObserver = function(observer){
 		
 		observers.push(observer);
@@ -20,16 +18,17 @@
 		}
 	count ++;	
 	}
+	return objeto1;
 }
 
 function gerarParametro(parametro){
 	
-	console.log(parametro.count); 
+	console.log(parametro.count);
 }
 
 var countObserver = gerarListener();
 
 countObserver.addObserver(gerarParametro);
 
-countObserver.executar();
-countObserver.executar();
+countObserver.executarObservers();
+countObserver.executarObservers();
